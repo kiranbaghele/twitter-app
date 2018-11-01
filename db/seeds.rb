@@ -5,3 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+# Response.create(message: "Meditation can help with #insomnia! http://nyti.ms/1LCs8hF Here's an I love: calm.com")

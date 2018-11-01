@@ -1,2 +1,9 @@
 <h1>Dashboards#home</h1>
-<p>Find me in app/views/dashboards/home.html.erb</p>
+<%= form_tag dashboards_search_result_path,:remote => true, :method => 'post' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search & Save", :name => nil %>
+  </p>
+<% end %>
+
+<div class="twitter-search-results"></div>

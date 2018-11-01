@@ -1,0 +1,24 @@
+<h1><center>Dashboards#index</center></h1>
+
+<div><%= link_to :HOME, root_url, class: "btn btn-success" %></div>
+<div class="container">
+<table class="table table-bordered">
+  <thead>
+    <tr class="header">
+      <th>Twitter Id</th>
+      <th>Tweet</th>
+      <th>Search_key</th>
+    </tr>
+   </thead>
+   <tbody>
+    <% @results.each do |r| %>
+      <tr>
+        <td><%= r.twitter_id %></td>
+        <td><%= r.tweet %></td>
+        <td><%= r.search_key %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= will_paginate @results %>
+</div>
